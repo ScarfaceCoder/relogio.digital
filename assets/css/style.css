@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:ital,wght@0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh; /* Altura */
+    background: linear-gradient(120deg, #fbfffad8, #024b9eda); /* Cor de fundo */
+    display: flex; /* Centralizar */
+    align-items: center; /* Centralizar */
+    justify-content: center; /* Centralizar */
+}
+
+.relogio{
+    display: flex; /* Elementos ficarem um ao lado do outro */
+    align-items: center; /* Elementos ficarem um ao lado do outro */
+    justify-content: space-around; /* Espaçamento entre os elementos */
+    height: 200px;
+    width: 550px;
+    /* Agora a parte de fundo do relógio */
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.relogio div{ /* dividindo o relógio em blocos */
+    height: 180px;
+    width: 150px;
+    display: flex;
+    flex-direction: column; /* deixar a escrita uma abaixo da outra */
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #060e24;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7) ;
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo{
+    font-size: 10px;
+}
